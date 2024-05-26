@@ -9,7 +9,8 @@ stages:
 
 build:
  stage: build
- image: centos:latest
+#  image: centos:latest
+ image: python:3.9-slim
  script:
   - pwd
   - ls -la
