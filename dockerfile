@@ -1,7 +1,21 @@
-FROM  image: centos:latest
+FROM  centos:latest
 
 WORKDIR /python_api
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY python-api.py ./
 CMD ["python", "python-api.py"]
+
+# FROM python:3.9-slim
+
+# ENV DB_HOST=172.20.0.10
+# ENV DB_TABLE=requests
+# ENV DB_USER=root
+# ENV DB_NAME=db1
+# ENV DB_PASSWORD=12345
+
+# WORKDIR /app
+# COPY requirements.txt ./
+# RUN pip install -r requirements.txt
+# COPY main.py ./
+# CMD ["python", "main.py"]
