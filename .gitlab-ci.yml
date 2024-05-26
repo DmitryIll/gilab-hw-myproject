@@ -9,7 +9,7 @@ stages:
 
 build:
  stage: build
- image: ubuntu:22
+ image: ubuntu
 #  image: centos:latest
 #  image: python:3.9-slim
  script:
