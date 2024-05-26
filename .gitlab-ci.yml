@@ -12,5 +12,6 @@ build:
  image: centos:latest
  script:
   - pwd
+  - ls -la
   - docker build .
 
