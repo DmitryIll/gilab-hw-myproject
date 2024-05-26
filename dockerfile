@@ -1,4 +1,4 @@
-# FROM  centos:latest
+# FROM  centos:7
 FROM python:3.9-slim
 
 
