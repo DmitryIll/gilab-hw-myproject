@@ -9,7 +9,7 @@ stages:
 
 build:
  stage: build
-#  image: ubuntu
+  image: docker:20.10.8-dind
 #  image: centos:latest
 #  image: python:3.9-slim
  script:
