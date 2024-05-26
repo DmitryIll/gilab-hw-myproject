@@ -9,8 +9,9 @@ stages:
 
 build:
  stage: build
+ image: ubuntu:22
 #  image: centos:latest
- image: python:3.9-slim
+#  image: python:3.9-slim
  script:
   - pwd
   - ls -la
