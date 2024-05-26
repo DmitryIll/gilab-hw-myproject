@@ -1,4 +1,4 @@
-FROM  image: centos7:latest
+FROM  image: centos:latest
 
 WORKDIR /python_api
 COPY requirements.txt ./
