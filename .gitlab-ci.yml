@@ -11,5 +11,6 @@ build:
  stage: build
  image: centos:latest
  script:
+  - pwd
   - docker build .
 
