@@ -9,7 +9,7 @@ stages:
 
 build:
  stage: build
- image: centos7:latest
+ image: centos:latest
  script:
   - docker build .
 
