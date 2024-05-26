@@ -1,4 +1,6 @@
-FROM  centos:latest
+# FROM  centos:latest
+FROM python:3.9-slim
+
 
 WORKDIR /python_api
 COPY requirements.txt ./
