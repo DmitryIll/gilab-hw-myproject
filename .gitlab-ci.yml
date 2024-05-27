@@ -1,21 +1,28 @@
----
-# image: docker:dind
-# services:
-#   - docker:dind
+image: docker:20.10.8
+services:
+  - docker:20.10.8-dind
 
 
 stages:
- - build
+  - build
+
 
 build:
- stage:build
-   image:docker:20.10.8-dind
-  #  image: docker:dind
-#  image: centos:latest
-#  image: python:3.9-slim 1
- script:
-  - pwd
-  - ls -la
-  - docker --version
-  - docker build .
+  stage: build
+  script:
+    - docker --version
+    - docker build .
+    # - docker build --build-arg version=$CI_COMMIT_TAG --build-arg username=$CI_REGISTRY_USER --build-arg password=$CI_REGISTRY_PASSWORD -t $CONTAINER_TAG_IMAGE .
+    # - docker push $CONTAINER_TAG_IMAGE
+
+# build:
+#  stage:build
+#    image:docker:20.10.8-dind
+#   #  image: docker:dind
+# #  image: centos:latest
+# #  image: python:3.9-slim 1
+#  script:
+#   - pwd
+#   - ls -la
+#   - docker --version
 
