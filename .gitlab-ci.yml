@@ -1,15 +1,15 @@
-image: docker:dind
-services:
-  - docker:dind
+# image: docker:dind
+# services:
+#   - docker:dind
 
 
 stages:
  - build
 
 build:
- stage: build
+ stage:build
+   image:docker:20.10.8-dind
   #  image: docker:dind
-   image: docker:20.10.8-dind
 #  image: centos:latest
 #  image: python:3.9-slim 1
  script:
