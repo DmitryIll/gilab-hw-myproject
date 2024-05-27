@@ -14,7 +14,7 @@ stages:
 
 build:
   stage: build
-    image: docker:dind
+  image: docker:dind
   script:
     - docker --version
     - docker build .
