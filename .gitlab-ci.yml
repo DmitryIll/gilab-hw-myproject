@@ -1,6 +1,11 @@
-image: docker:20.10.8
+image: docker:dind
 services:
-  - docker:20.10.8-dind
+  - docker:dind
+
+
+# image: docker:20.10.8
+# services:
+#   - docker:20.10.8-dind
 
 
 stages:
