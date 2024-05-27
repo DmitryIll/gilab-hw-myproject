@@ -11,7 +11,7 @@ build:
    image: docker:dind
   #  image: docker:20.10.8-dind
 #  image: centos:latest
-#  image: python:3.9-slim
+#  image: python:3.9-slim 1
  script:
   - pwd
   - ls -la
